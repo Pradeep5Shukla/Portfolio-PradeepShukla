@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pradeep | Full Stack Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=Space+Mono:wght@400;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Custom cursor -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+
+  <!-- Loader -->
+  <div id="loader">
+    <div class="loader-inner">
+      <div class="loader-bar"></div>
+      <div class="loader-text">INITIALIZING<span class="loader-dots">...</span></div>
+      <div class="loader-percent">0%</div>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <nav id="navbar">
+    <div class="nav-logo">
+      <span class="logo-bracket">&lt;</span>P<span class="logo-bracket">/&gt;</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#hero" data-text="Home">Home</a></li>
+      <li><a href="#about" data-text="About">About</a></li>
+      <li><a href="#skills" data-text="Skills">Skills</a></li>
+      <li><a href="#projects" data-text="Projects">Projects</a></li>
+      <li><a href="#contact" data-text="Contact">Contact</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="#contact" class="btn-hire">Hire Me</a>
+    </div>
+    <div class="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════ HERO SECTION ═══════════════════════════════ -->
+  <section id="hero">
+    <canvas id="hero-canvas"></canvas>
+    <div class="hero-content">
+      <div class="hero-tag">Full Stack Developer · MERN Stack</div>
+      <h1 class="hero-name">
+        <span class="name-line" data-text="PRADEEP">PRADEEP</span>
+      </h1>
+      <div class="hero-subtitle">
+        <span class="typewriter" id="typewriter"></span>
+        <span class="type-cursor">|</span>
+      </div>
+      <p class="hero-desc">
+        Building digital experiences that live at the intersection of performance, beauty, and innovation. Every pixel, every interaction — crafted with intent.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn-primary">
+          <span class="btn-bg"></span>
+          <span class="btn-text">View Work</span>
+          <i class="btn-icon">↗</i>
+        </a>
+        <a href="#contact" class="btn-ghost">Let's Talk</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-num" data-target="15">0</span><span class="stat-label">Projects</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num" data-target="8">0</span><span class="stat-label">Technologies</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num" data-target="100">0</span><span class="stat-label">% Committed</span></div>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+    <div class="hero-floating-tags">
+      <div class="float-tag" style="--d:0s;--x:-60px;--y:-40px">React</div>
+      <div class="float-tag" style="--d:0.4s;--x:80px;--y:-80px">Node.js</div>
+      <div class="float-tag" style="--d:0.8s;--x:-80px;--y:60px">MongoDB</div>
+      <div class="float-tag" style="--d:1.2s;--x:60px;--y:70px">Three.js</div>
+      <div class="float-tag" style="--d:0.2s;--x:140px;--y:0px">Express</div>
+    </div>
+
+    <!-- Photo Card -->
+    <div class="hero-photo-wrap">
+      <div class="hero-photo-card" id="hero-photo-card">
+        <div class="photo-glass-border"></div>
+        <div class="photo-inner">
+          <img src="photo.jpg" alt="Pradeep" class="hero-photo-img" />
+        </div>
+        <div class="photo-corner tl"></div>
+        <div class="photo-corner tr"></div>
+        <div class="photo-corner bl"></div>
+        <div class="photo-corner br"></div>
+        <div class="photo-badge">
+          <span class="badge-dot"></span>
+          Available for work
+        </div>
+        <div class="photo-glow-orb orb1"></div>
+        <div class="photo-glow-orb orb2"></div>
+      </div>
+      <div class="photo-ring pr1"></div>
+      <div class="photo-ring pr2"></div>
+      <div class="photo-floating-chips">
+        <div class="chip chip1">MERN Stack</div>
+        <div class="chip chip2">Open to Work</div>
+        <div class="chip chip3">TechPreneur 2026</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════ ABOUT SECTION ═══════════════════════════════ -->
+  <section id="about">
+    <canvas id="about-canvas"></canvas>
+    <div class="section-container">
+      <div class="section-eyebrow">Who I Am</div>
+      <h2 class="section-title split-text">About<br/><em>Me</em></h2>
+      <div class="about-grid">
+        <div class="about-visual">
+          <div class="avatar-3d-wrapper">
+            <div class="avatar-3d">
+              <div class="avatar-face front">
+                <div class="avatar-initials">P</div>
+              </div>
+              <div class="avatar-face back">
+                <div class="avatar-code">&lt;dev/&gt;</div>
+              </div>
+              <div class="avatar-face left"></div>
+              <div class="avatar-face right"></div>
+              <div class="avatar-face top"></div>
+              <div class="avatar-face bottom"></div>
+            </div>
+            <div class="avatar-rings">
+              <div class="ring r1"></div>
+              <div class="ring r2"></div>
+              <div class="ring r3"></div>
+            </div>
+            <div class="avatar-particles" id="avatar-particles"></div>
+          </div>
+        </div>
+        <div class="about-text">
+          <p class="about-intro">I'm a <strong>Full Stack Developer</strong> with a passion for building things that matter. Currently pursuing excellence through the TechPreneur 2026 program — where ideas meet execution.</p>
+          <p>My stack lives in the MERN ecosystem. I architect scalable APIs, craft immersive UIs, and obsess over the details that separate good from remarkable.</p>
+          <div class="about-tags">
+            <span>Problem Solver</span>
+            <span>Open Source</span>
+            <span>Team Player</span>
+            <span>Lifelong Learner</span>
+          </div>
+          <div class="about-cta">
+            <a href="#" class="btn-download" download>
+              <span>Download CV</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════ SKILLS SECTION ═══════════════════════════════ -->
+  <section id="skills">
+    <canvas id="skills-canvas"></canvas>
+    <div class="section-container">
+      <div class="section-eyebrow">What I Know</div>
+      <h2 class="section-title split-text">Tech<br/><em>Arsenal</em></h2>
+      <div class="skills-universe" id="skills-3d-container">
+        <!-- Three.js skill orbs rendered here -->
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card" data-skill="React" data-level="90">
+          <div class="skill-card-inner">
+            <div class="skill-icon">⚛</div>
+            <div class="skill-name">React</div>
+            <div class="skill-bar-wrap"><div class="skill-bar" data-w="90"></div></div>
+            <div class="skill-level">90%</div>
+          </div>
+          <div class="skill-glow"></div>
+        </div>
+        <div class="skill-card" data-skill="Node.js" data-level="85">
+          <div class="skill-card-inner">
+            <div class="skill-icon">⬡</div>
+            <div class="skill-name">Node.js</div>
+            <div class="skill-bar-wrap"><div class="skill-bar" data-w="85"></div></div>
+            <div class="skill-level">85%</div>
+          </div>
+          <div class="skill-glow"></div>
+        </div>
+        <div class="skill-card" data-skill="MongoDB" data-level="80">
+          <div class="skill-card-inner">
+            <div class="skill-icon">🍃</div>
+            <div class="skill-name">MongoDB</div>
+            <div class="skill-bar-wrap"><div class="skill-bar" data-w="80"></div></div>
+            <div class="skill-level">80%</div>
+          </div>
+          <div class="skill-glow"></div>
+        </div>
+        <div class="skill-card" data-skill="Express" data-level="83">
+          <div class="skill-card-inner">
+            <div class="skill-icon">⚡</div>
+            <div class="skill-name">Express</div>
+            <div class="skill-bar-wrap"><div class="skill-bar" data-w="83"></div></div>
+            <div class="skill-level">83%</div>
+          </div>
+          <div class="skill-glow"></div>
+        </div>
+        <div class="skill-card" data-skill="Three.js" data-level="70">
+          <div class="skill-card-inner">
+            <div class="skill-icon">🔮</div>
+            <div class="skill-name">Three.js</div>
+            <div class="skill-bar-wrap"><div class="skill-bar" data-w="70"></div></div>
+            <div class="skill-level">70%</div>
+          </div>
+          <div class="skill-glow"></div>
+        </div>
+        <div class="skill-card" data-skill="JavaScript" data-level="88">
+          <div class="skill-card-inner">
+            <div class="skill-icon">JS</div>
+            <div class="skill-name">JavaScript</div>
+            <div class="skill-bar-wrap"><div class="skill-bar" data-w="88"></div></div>
+            <div class="skill-level">88%</div>
+          </div>
+          <div class="skill-glow"></div>
+        </div>
+        <div class="skill-card" data-skill="Git" data-level="85">
+          <div class="skill-card-inner">
+            <div class="skill-icon">⑂</div>
+            <div class="skill-name">Git</div>
+            <div class="skill-bar-wrap"><div class="skill-bar" data-w="85"></div></div>
+            <div class="skill-level">85%</div>
+          </div>
+          <div class="skill-glow"></div>
+        </div>
+        <div class="skill-card" data-skill="CSS" data-level="87">
+          <div class="skill-card-inner">
+            <div class="skill-icon">#</div>
+            <div class="skill-name">CSS / 3D</div>
+            <div class="skill-bar-wrap"><div class="skill-bar" data-w="87"></div></div>
+            <div class="skill-level">87%</div>
+          </div>
+          <div class="skill-glow"></div>
+        </div>
+        <div class="skill-card" data-skill="DSA" data-level="82">
+          <div class="skill-card-inner">
+            <div class="skill-icon">C++</div>
+            <div class="skill-name">DSA (C++)</div>
+            <div class="skill-bar-wrap"><div class="skill-bar" data-w="82"></div></div>
+            <div class="skill-level">82%</div>
+          </div>
+          <div class="skill-glow"></div>
+        </div>
+        <div class="skill-card" data-skill="WebDev" data-level="88">
+          <div class="skill-card-inner">
+            <div class="skill-icon">🌐</div>
+            <div class="skill-name">Web Dev</div>
+            <div class="skill-bar-wrap"><div class="skill-bar" data-w="88"></div></div>
+            <div class="skill-level">88%</div>
+          </div>
+          <div class="skill-glow"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════ PROJECTS SECTION ═══════════════════════════════ -->
+  <section id="projects">
+    <canvas id="projects-canvas"></canvas>
+    <div class="section-container">
+      <div class="section-eyebrow">What I've Built</div>
+      <h2 class="section-title split-text">Featured<br/><em>Projects</em></h2>
+      <div class="projects-showcase">
+
+        <article class="project-card featured" data-tilt>
+          <div class="project-card-bg"></div>
+          <div class="project-number">01</div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span>MERN Stack</span><span>Real-time</span><span>AI</span>
+            </div>
+            <h3 class="project-title">QueueLess</h3>
+            <p class="project-desc">Smart virtual queue & appointment management system. Eliminates physical waiting with intelligent slot allocation, real-time updates, and predictive analytics.</p>
+            <div class="project-tech">React · Node · MongoDB · Socket.io</div>
+            <div class="project-links">
+              <a href="#" class="plink-live">Live Demo ↗</a>
+              <a href="#" class="plink-code">GitHub →</a>
+            </div>
+          </div>
+          <div class="project-visual">
+            <canvas class="project-mini-canvas" data-scene="queue"></canvas>
+          </div>
+          <div class="project-shine"></div>
+        </article>
+
+        <article class="project-card" data-tilt>
+          <div class="project-card-bg"></div>
+          <div class="project-number">02</div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span>React</span><span>Platform</span><span>P2P</span>
+            </div>
+            <h3 class="project-title">SkillSwap</h3>
+            <p class="project-desc">Peer-to-peer skill exchange platform. Users trade expertise — you teach guitar, I teach React. Built with real-time matching and live session support.</p>
+            <div class="project-tech">React · Express · MongoDB · JWT</div>
+            <div class="project-links">
+              <a href="#" class="plink-live">Live Demo ↗</a>
+              <a href="#" class="plink-code">GitHub →</a>
+            </div>
+          </div>
+          <div class="project-visual">
+            <canvas class="project-mini-canvas" data-scene="skill"></canvas>
+          </div>
+          <div class="project-shine"></div>
+        </article>
+
+        <article class="project-card" data-tilt>
+          <div class="project-card-bg"></div>
+          <div class="project-number">03</div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span>Node.js</span><span>Auth</span><span>Security</span>
+            </div>
+            <h3 class="project-title">AuthApp</h3>
+            <p class="project-desc">Production-grade authentication system with JWT, refresh tokens, OAuth, rate limiting, and role-based access control. Zero-trust architecture.</p>
+            <div class="project-tech">Node · Express · MongoDB · JWT</div>
+            <div class="project-links">
+              <a href="#" class="plink-live">Live Demo ↗</a>
+              <a href="#" class="plink-code">GitHub →</a>
+            </div>
+          </div>
+          <div class="project-visual">
+            <canvas class="project-mini-canvas" data-scene="auth"></canvas>
+          </div>
+          <div class="project-shine"></div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════ CONTACT SECTION ═══════════════════════════════ -->
+  <section id="contact">
+    <canvas id="contact-canvas"></canvas>
+    <div class="section-container">
+      <div class="section-eyebrow">Get In Touch</div>
+      <h2 class="section-title split-text">Let's<br/><em>Connect</em></h2>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <p class="contact-intro">Have a project in mind? Let's build something extraordinary together.</p>
+          <div class="contact-items">
+            <div class="contact-item">
+              <div class="ci-icon">✉</div>
+              <div class="ci-text">
+                <span class="ci-label">Email</span>
+                <a href="mailto:pradeep@example.com">pradeep@example.com</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="ci-icon">⑂</div>
+              <div class="ci-text">
+                <span class="ci-label">GitHub</span>
+                <a href="#">github.com/pradeep</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="ci-icon">in</div>
+              <div class="ci-text">
+                <span class="ci-label">LinkedIn</span>
+                <a href="#">linkedin.com/in/pradeep</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form" id="contact-form">
+          <div class="form-group">
+            <input type="text" id="name" placeholder=" " required />
+            <label for="name">Your Name</label>
+            <div class="form-line"></div>
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" placeholder=" " required />
+            <label for="email">Your Email</label>
+            <div class="form-line"></div>
+          </div>
+          <div class="form-group">
+            <textarea id="message" rows="4" placeholder=" " required></textarea>
+            <label for="message">Your Message</label>
+            <div class="form-line"></div>
+          </div>
+          <button type="submit" class="btn-send">
+            <span class="btn-send-text">Send Message</span>
+            <span class="btn-send-icon">→</span>
+            <div class="btn-send-ripple"></div>
+          </button>
+          <div class="form-status" id="form-status"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">&lt;Pradeep /&gt;</div>
+      <p class="footer-copy">Designed & Built with ❤ and Three.js · 2026</p>
+      <div class="footer-socials">
+        <a href="#">GH</a>
+        <a href="#">LI</a>
+        <a href="#">TW</a>
+      </div>
+    </div>
+    <div class="footer-line"></div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="js/cursor.js"></script>
+  <script src="js/loader.js"></script>
+  <script src="js/hero3d.js"></script>
+  <script src="js/sections3d.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
